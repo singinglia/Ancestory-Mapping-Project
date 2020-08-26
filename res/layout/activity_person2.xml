@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivity2">
+
+    <TableLayout
+        android:id="@+id/PersonInfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/nameFirstTextPersonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    tools:text="Darth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FirstNamePersonAct" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/lineSeparator" />
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/nameLastTextPersonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    tools:text="Vader" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/LastNamePersonAct" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/lineSeparator" />
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/GenderTextPersonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    tools:text="Male" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GenderPersonAct" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/lineSeparator" />
+
+
+    </TableLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_below="@id/PersonInfoBox"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:dividerHeight="0.5dp"
+        android:divider="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+</RelativeLayout>

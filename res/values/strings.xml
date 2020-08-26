@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Family Map</string>
+    <string name="title_activity_settings">Family Map: Settings</string>
+    <string name="title_activity_person">Family Map: Person Details</string>
+    <string name="title_activity_search">Family Map: Search</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--Login -->
+
+    <string name="firstName">First Name:</string>
+
+    <string name="lastName">Last Name:</string>
+
+    <string name="serverHost">Server Host: </string>
+
+    <string name="serverPort">Server Port: </string>
+
+    <string name="userName">User Name:</string>
+
+    <string name="passWord">Password:</string>
+
+    <string name="genderChoice">Gender:</string>
+
+    <string name="femaleRadio">Female</string>
+
+    <string name="MaleRadio">Male</string>
+
+    <string name="emailAddress">Email:</string>
+
+    <!-- Button Names -->
+
+    <string name="signIn">Sign in</string>
+
+    <string name="registerButton">Register</string>
+
+    <!--Activities -->
+
+    <string name="clickMarkerMessage">Click on a marker </string>
+
+    <string name="EventInfoString">to see event details</string>
+
+    <string name="personRelativesTitle">Family</string>
+    <string name="personEventsTitle">Life Events</string>
+
+    <string name="searchMenu">Search</string>
+    <string name="settingsMenu">Settings</string>
+
+
+    <string name="FirstNamePersonAct">First Name</string>
+    <string name="LastNamePersonAct">Last Name</string>
+    <string name="GenderPersonAct">Gender</string>
+
+    <!--Settings Activity -->
+    <string name="storyLinesTitle">Life Story Lines</string>
+    <string name="storyLinesSetting">Show Life Story Lines</string>
+
+    <string name="familyLinesTitle">Family Tree Lines</string>
+    <string name="familyLinesSetting">Show Family Tree Lines</string>
+
+    <string name="spouseLinesTitle">Spouse Lines</string>
+    <string name="spouseLinesSetting">Show Spouse Lines</string>
+
+    <string name="fathersideTitle">Father\'s Side</string>
+    <string name="fathersideSetting">Filter by Father\'s side of the Family</string>
+
+    <string name="mothersideTitle">Mother\'s Side</string>
+    <string name="mothersideSetting">Filter by Mother\'s side of the Family</string>
+
+    <string name="maleGenderTitle">Male Events</string>
+    <string name="femaleGenderTitle">Female Events</string>
+    <string name="genderSetting">Filter Events Based on Gender</string>
+
+    <string name="logOutTitle">Logout</string>
+    <string name="logoutSetting">Return to Login Screen</string>
+
+</resources>

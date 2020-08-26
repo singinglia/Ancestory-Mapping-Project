@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/EventGrid" />
+
+
+    <RelativeLayout
+        android:id="@+id/EventGrid"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/EventIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:contentDescription="Icon" />
+
+        <TableLayout
+            android:id="@+id/EventWindowText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/EventIcon"
+            android:gravity="center"
+            android:layout_toEndOf="@id/EventIcon">
+
+         <TableRow>
+
+             <TextView
+                 android:id="@+id/TextWindowName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="@string/clickMarkerMessage"
+                 android:textAlignment="center"
+                 android:textSize="20.5sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:id="@+id/EventInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/EventInfoString"
+                    android:gravity="center"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

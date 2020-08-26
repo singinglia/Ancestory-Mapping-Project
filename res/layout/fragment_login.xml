@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/serverHost"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/hostLineField"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:inputType="text"
+            tools:text="Host" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/serverPort"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/serverPortField"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:inputType="textPostalAddress"
+            tools:text="8080" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/userName"
+            android:gravity="end"/>
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:text="Windrunner"
+            android:inputType="textPersonName"
+            android:layout_span="3"
+            android:id="@+id/usernameField"/>
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/passWord"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:inputType="textPassword"
+            tools:text="sylFan!"
+            android:importantForAutofill="no" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/firstName"
+            android:gravity="end"/>
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:text="Kaladin"
+            android:inputType="textPersonName"
+            android:layout_span="3"
+            android:id="@+id/firstNameField"/>
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/lastName"
+            android:gravity="end"/>
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:text="Stormblessed"
+            android:inputType="textPersonName"
+            android:layout_span="3"
+            android:id="@+id/lastNameField"/>
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/emailAddress"
+            android:gravity="end"/>
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:text="windrunner@roshar.gov"
+            android:inputType="textEmailAddress"
+            android:layout_span="3"
+            android:id="@+id/emailAddressField"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/genderChoice" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupGender"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/RadioButtonFemale"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:layout_width="wrap_content"
+                android:text="@string/femaleRadio"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioMale"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/MaleRadio"></RadioButton>
+
+        </RadioGroup>
+
+    </TableRow>
+
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/signIn"
+            android:enabled="false"
+            android:id="@+id/signInButton"/>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/registerButton"
+            android:enabled="false"
+            android:id="@+id/registerButton" />
+
+    </LinearLayout>
+
+</TableLayout>

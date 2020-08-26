@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="male_icon">#5588ff</color>
+    <color name="female_icon">#ff3cc8</color>
+    <color name="android_icon">#51ff60</color>
+    <color name="map_marker_icon">#03A9F4</color>
+    <color name="menu_icon">#FBFBF9</color>
+
+    <color name="lineSeparator">#D1C5C2</color>
+</resources>
